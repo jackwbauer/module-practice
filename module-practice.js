@@ -4,12 +4,16 @@ function addToList(num) {
   numList.push(num);
 }
 
-function sortedNumList() {
+function sortNumList() {
   var sortedList = numList.sort(function(a, b) {
     return a - b;
   });
   return numList;
 }
 
+function returnSortedList() {
+  return sortNumList();
+}
+
 exports.addToList = addToList;
-exports.sortedNumList = sortedNumList;
+exports.returnSortedList = returnSortedList;
